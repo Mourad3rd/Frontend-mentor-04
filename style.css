@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    align-items: center;
+    box-shadow: 0 15px 48px -15px hsl(245deg 75% 52% / 25%);
+}
+
+@media (max-width:616px){
+    body {
+        background-color: #d6e0fe;
+    }
+    .container { border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; }
+}
+
+.container picture {
+    margin-bottom: 3em;
+}
+
+h2 {
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 2rem;
+    font-weight: 900;
+}
+
+p {
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    font-size: 15px;
+    margin: 0 40px 2em;
+}
+
+.plan-info {
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.plan-info img {
+    width: 45px;
+}
+
+.plan-info span {
+    font-weight: 900;
+    margin-left: 15px;
+    font-size: 14px;
+    color: hsl(223, 47%, 23%);
+}
+
+.plan-info span::after {
+    content: "$59.99/year";
+    display: block;
+    font-weight: 500;
+    margin-top: 5px;
+    color: hsl(224, 23%, 55%);
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+.plan-info a {
+    padding-left: 70px;
+    font-size: 13px;
+    color: hsl(245, 75%, 52%);
+    font-weight: 900;
+}
+
+.plan-info a:hover {
+    color: hsl(245deg 82% 68%);
+}
+
+button {
+    color: white;
+    width: 310px;
+    background-color: hsl(245, 75%, 52%);
+    padding: 15px;
+    border-radius: 10px;
+    border: 0;
+    font-weight: 700;
+    box-shadow: 0 15px 30px hsl(245deg 75% 52% / 25%);
+    margin-bottom: 2em;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+button:hover {
+    background-color: hsl(245deg 82% 68%);
+}
+
+main > a {
+    margin-bottom: 3em;
+    font-size: 14px;
+    font-weight: 600;
+    color: hsl(224, 23%, 55%);
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+main>a:hover {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
